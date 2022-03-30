@@ -1,18 +1,16 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
-import Iframe from "react-iframe";
-
 const Instructions = ({ ins }) => {
   const {
     strMeal,
     strCategory,
     strArea,
     strInstructions,
-    strYoutube,
+
     strMealThumb,
   } = ins;
-  console.log(strYoutube);
+
   return (
     <div className="my-5">
       <h3 className="text-center display-4 my-5">
