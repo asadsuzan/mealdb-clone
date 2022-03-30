@@ -6,7 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Fotter = () => {
   return (
-    <footer className="bg-light">
+    <footer className="bg-light mt-5">
       <div className="container d-md-flex flex-wrap justify-content-between align-items-center text-center">
         <div className="social-links">
           <h5>Follw Us</h5>
