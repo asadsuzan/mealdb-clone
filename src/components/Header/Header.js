@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className=" bg-info">
+    <header className=" bg-light">
       <div className="container">
         <nav
           className="d-md-flex text-center  justify-content-between  align-items-center"
@@ -17,23 +17,23 @@ const Header = () => {
             />
           </div>
           <div className="nav-links">
-            <Link className="text-white px-2 text-bold text-uppercase" to={"/"}>
+            <Link className="text-info px-2 text-bold text-uppercase" to={"/"}>
               Home
             </Link>
             <Link
-              className="text-white px-2 text-bold text-uppercase"
+              className="text-info px-2 text-bold text-uppercase"
               to={"/catagories"}
             >
               Catagories
             </Link>
             <Link
-              className="text-white px-2 text-bold text-uppercase"
+              className="text-info px-2 text-bold text-uppercase"
               to={"/about"}
             >
               About Us
             </Link>
             <Link
-              className="text-white px-2 text-bold text-uppercase"
+              className="text-info px-2 text-bold text-uppercase"
               to={"/contact"}
             >
               Contact Us
