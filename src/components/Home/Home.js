@@ -32,7 +32,7 @@ const Home = () => {
             Quickly aggregate empowered networks after emerging products...
           </p>
         </div>
-        <div className="search-filed">
+        <div className="search-filed text-center">
           <input
             onChange={searchMeal}
             style={{ width: "400px" }}
@@ -40,6 +40,9 @@ const Home = () => {
             placeholder="Search Meals"
             type="text"
           />
+          <h4 className="text-danger">
+            Meals:{meals?.length ? meals.length : 0}
+          </h4>
         </div>
       </div>
       <div className="container my-5">
@@ -48,7 +51,7 @@ const Home = () => {
           <p>Choose your necessary products from this feature categories.</p>
         </div>
         <div className="row ">
-          {meals.map((meal) => (
+          {meals?.map((meal) => (
             <Meals key={meal.idMeal} meal={meal}></Meals>
           ))}
         </div>

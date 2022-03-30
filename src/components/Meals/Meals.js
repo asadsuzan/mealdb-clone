@@ -1,8 +1,15 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const Meals = ({ meal }) => {
   const { strMealThumb, strMeal, idMeal, strCategory, strInstructions } = meal;
+  const navigate = useNavigate();
+
+  const detals = () => {
+    let path = "/recipe/" + idMeal;
+    navigate(path);
+  };
   return (
     <div className="col-lg-4 my-4">
       <Card style={{ width: "100%" }}>
@@ -15,7 +22,9 @@ const Meals = ({ meal }) => {
           </Card.Title>
           <hr />
           <Card.Text>{strInstructions.slice(0, 100)}...</Card.Text>
-          <Button variant="info">Recipe</Button>
+          <Button onClick={detals} variant="info">
+            Recipe
+          </Button>
         </Card.Body>
       </Card>
     </div>
