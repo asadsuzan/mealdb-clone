@@ -14,16 +14,17 @@ const Home = () => {
   };
   console.log(meals);
   return (
-    <section
-      className="home-section"
-      style={{
-        backgroundImage:
-          "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh0NFtmrk8gJkhrXWZk9vxSH_I9OqUnTTkLw&usqp=CAU)",
-        backgroundSize: "cover",
-        height: "400px",
-      }}
-    >
-      <div className="container d-flex w-100 h-100 align-items-center justify-content-center  flex-column">
+    <section className="home-section ">
+      <div
+        className="container d-flex w-100  align-items-center justify-content-center  flex-column"
+        style={{
+          backgroundImage:
+            "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh0NFtmrk8gJkhrXWZk9vxSH_I9OqUnTTkLw&usqp=CAU)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "500px",
+        }}
+      >
         <div className="content text-center">
           <h1 className="content-title display-5 text-bold">
             Best Different Type of Grocery Store

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className=" bg-light">
+    <header className=" bg-light w-100 ">
       <div className="container">
         <nav
           className="d-md-flex text-center  justify-content-between  align-items-center"

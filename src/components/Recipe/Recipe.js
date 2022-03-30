@@ -13,7 +13,7 @@ const Recipe = () => {
   }, [id]);
 
   return (
-    <section className="container">
+    <section className="container" style={{ height: "100vh" }}>
       {recipe.map((ins) => (
         <Instructions key={ins.idMeal} ins={ins}></Instructions>
       ))}
