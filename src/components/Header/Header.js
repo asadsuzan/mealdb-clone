@@ -20,12 +20,7 @@ const Header = () => {
             <Link className="text-info px-2 text-bold text-uppercase" to={"/"}>
               Home
             </Link>
-            <Link
-              className="text-info px-2 text-bold text-uppercase"
-              to={"/catagories"}
-            >
-              Catagories
-            </Link>
+
             <Link
               className="text-info px-2 text-bold text-uppercase"
               to={"/about"}
